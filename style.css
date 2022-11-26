@@ -43,7 +43,13 @@ nav {
 .nav-container ul .nav-link {
     margin-right: 20px;
     color: #fff;
+    border: none;
     text-transform: capitalize;
+    transition: .4s all ease-in-out;
+}
+
+.nav-container ul .nav-link:hover {
+    border-bottom: 2px solid white;
 }
 
 .nav-container ul .nav-link:last-child {
@@ -108,9 +114,73 @@ main .main-container .main-infos-content .button-content button {
 
 main .main-container .main-infos-content .button-content button:hover {
     box-shadow: -4px -4px 0px 0px #eb7711bf;
+    animation: shake .3s 2 linear;
 
 }
 
 main .main-container .main-image {
     width: 500px;
+}
+
+.social-container {
+    position: absolute;
+    right: 25px;
+    top: 40%;
+}
+
+.social-container a .social-item {
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    transition: .3s all ease-in-out;
+}
+
+.social-container a .social-item.instagram:hover {
+    background-color: #E4405F;
+    color: white;
+}
+
+.social-container a .social-item.twitter:hover {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.social-container a .social-item.github:hover {
+    background-color: #171515;
+    color: white;
+}
+
+.social-container a .social-item.linkedin:hover {
+    background-color: #0A66C2;
+    color: white;
+}
+
+@keyframes shake {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
 }
